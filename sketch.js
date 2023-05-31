@@ -7,7 +7,6 @@ const Render = Matter.Render;
 var dustbinObj,groundObject,paperObj
 var world;
 
-
 function setup() {
 	createCanvas(1600, 700);
 	rectMode(CENTER);
@@ -18,12 +17,11 @@ function setup() {
 	
 	groundObject=new ground(width/2,670,width,20);
 	dustbinObj=new dustbin(1200,650);
-	paperObj= new paper(500,650);
+	paperObj= new paper(500,650,70);
 
 	Engine.run(engine);
   
 }
-
 
 function draw() {
   rectMode(CENTER);
